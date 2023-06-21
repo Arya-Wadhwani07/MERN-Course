@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+     <header>
+        <h2>JS for reversing a number</h2>
+    </header>
+    <main>
+        <input type="text" id="n1"><br><br>
+        <button onclick="reverseNumber()">Submit</button>
+        <p id="p1"></p>
+    </main>
+    <script>
+        function reverseNumber(){
+            var num=document.getElementById("n1").value
+
+            var arr=num.split("")
+
+            var temp=[]
+            let j=0
+            for(let i=arr.length-1;i>=0;i--){
+                temp[j]=arr[i]
+                j++
+            }
+            temp.join()
+
+            document.getElementById("p1").innerHTML=temp
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        #container1 {
+            margin-top: 50px; 
+            background-color: #F4F4F4;
+            height: 700px;
+            padding: 15px;
+            width: 500px;
+        }
+       
+
+        #bt1 {
+            margin-left: 120px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #DA9E40;
+            color: white;
+            border-radius: 5px;
+        }
+        .control-label{
+            font-weight: normal;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    
+    <div class="row">
+            <div class="col-sm-6">
+    <div id="container1">
+        
+        <form>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="firstname" class="control-label">FirstName:</label>
+                </div>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user" ></i></span>
+                        <input id="firstname" type="text" class="form-control" name="firstname" placeholder="FirstName"  style="width:305px;">
+                    </div>
+                    <div class="invalid-feedback" style="display: none;">Please fill out this field.</div>
+                </div>
+
+            </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-3">
+                    <label for="lastname" class="control-label">lastname:</label>
+                </div>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="lastname" type="text" class="form-control" name="lastname" placeholder="lastName">
+                    </div>
+                    <div class="invalid-feedback" style="display: none;">Please fill out this field.</div>
+                </div>
+            </div>
+
+          <br>
+          <div class="row">
+            <div class="col-sm-3">
+                <label for="email" class="control-label">Email:</label>
+            </div>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input id="email" type="text" class="form-control" name="email" placeholder="email">
+                </div>
+                <div class="invalid-feedback" style="display: none;">Please fill out this field.</div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <label for="phone" class="control-label">Phone:</label>
+            </div>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input id="phone" type="text" class="form-control" name="phone" placeholder="Phone">
+                </div>
+                <div class="invalid-feedback" style="display: none;">Please fill out this field.</div>
+            </div>
+        </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-3">
+                <label for="address" class="control-label">Address:</label>
+            </div>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input id="address" type="text" class="form-control" name="address" placeholder="address">
+                </div>
+                <div class="invalid-feedback" style="display: none;">Please fill out this field.</div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <label for="city" class="control-label">City:</label>
+            </div>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input id="city" type="text" class="form-control" name="city" placeholder="city">
+                </div>
+                <div class="invalid-feedback" style="display: none;">Please fill out this field.</div>
+            </div>
+        </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-3">
+                <label for="state" class="control-label">State:</label>
+            </div>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-th-list"></i></span>
+                    
+                    <select id="state" class="form-control" name="state">
+                        <option value="">Please select your state</option>
+                        <option value="state1">State 1</option>
+                        <option value="state2">State 2</option>
+                        <option value="state3">State 3</option>
+                    </select>
+                    
+                </div>
+            </div>
+        </div>
+         <br><br>
+         
+          <div class="input-group">
+            <label for="hosting" >Do you have hosting?</label>
+            <input type="radio" id="yes" name="hosting" style="margin-left: 30px;"> Yes<br>
+            <input type="radio" id="no" name="hosting" style="margin-left: 180px;"> No<br>
+        </div>
+      
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <label for="project" class="control-label">Project Description:</label>
+            </div>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <input id="project" type="text" class="form-control" name="project" placeholder="Description">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <button onclick="check()" id="bt1">Send</button>
+        </form>
+            </div>
+            </div>
+
+          
+      <script>
+        function check(){
+            var invalid_response=document.getElementsByClassName("invalid-feedback")
+            var form_control=document.getElementsByClassName("form-control")
+            var control_label=document.getElementsByClassName("control-label")
+            for(let i=0;i<invalid_response.length;i++){
+                if (invalid_response[i].style.display == 'none') {
+                    event.preventDefault()
+                    invalid_response[i].style.display = 'block';
+                    invalid_response[i].style.color='red';
+                    form_control[i].style.borderColor="red";
+                    control_label[i].style.color='red';
+
+                }else {
+                    event.preventDefault()
+                    invalid_response[i].style.display = 'none';
+                }
+            }
+        }
+      </script>
+      
+</body>
+</html>

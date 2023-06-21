@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+}
+#navbar{
+    padding-left: 2px;
+    float: left;
+}
+button{
+    display: block;
+    padding: 30px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: none;
+}
+#bt1{
+    background-color: lightgreen;
+}
+button:hover{
+    padding: 35px;
+}
+#bt2{
+    background-color: lightblue;
+}
+#bt3{
+    background-color: red;
+}
+#bt4{
+    background-color: grey;
+}
+#text{
+    padding: 30px;
+    
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-10</title>
+</head>
+<body>
+    <script>
+        var arr1=[10,20,30]
+        var arr2=[40,50,60]
+        console.log("Concat Method",arr1.concat(arr2))
+        console.log("Copy Within:" ,arr1.concat(arr1).copyWithin(arr1.length, 0, arr1.length))
+        var arr3=arr1.concat(arr2)
+        var arr4 = arr1.concat(arr1).copyWithin(arr1.length, 0, arr1.length)
+        console.log("Map Method")
+        arr3.map((value)=>{
+            console.log(value)
+        })
+        console.log("Every Method")
+        const val1 = arr3.every((value)=>{
+            return value==30
+        })
+        console.log(val1)
+        console.log("Some Method")
+        const val2 = arr3.some((value)=>{
+            return value==30
+        })
+        console.log(val2)
+        console.log("Filter Method")
+        const newArr = arr4.filter((value)=>{
+            return value==20 || value==30
+        })
+        console.log(newArr)
+        console.log("Find Method")
+        const value = arr3.find((value)=>{
+            return value==20
+        })
+        console.log(value)
+        console.log("Find Index Method")
+        console.log(arr3.findIndex((value)=>{
+            return value==20
+        }))
+        console.log("Index Of Method")
+        console.log(arr3.indexOf(20))
+        console.log("Last Index Of Method")
+        console.log(arr4.lastIndexOf(20))
+        console.log("Push Method")
+        arr4.push(100)
+        console.log(arr4)
+        console.log("Pop Method")
+        arr4.pop()
+        console.log(arr4)
+        console.log("Shift Method")
+        arr4.shift(1)
+        console.log(arr4)
+
+
+    </script>
+</body>
+</html>

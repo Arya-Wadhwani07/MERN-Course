@@ -1,0 +1,52 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical {
+    float: left;
+    width: 200px;
+}
+
+.vertical ul {
+    margin: 0;
+    padding: 0;
+}
+
+.vertical ul li {
+    background-color: lightblue;
+    color: blue;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.vertical ul li:hover {
+    background-color: yellow;
+}
+
+.horizontal {
+    float: left;
+    width: calc(100% - 200px);
+    text-align: right;
+    margin-top: 0;
+}
+
+.horizontal ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal ul li {
+    background-color: lightgrey;
+    color: blue;
+    margin-right: 0;
+    padding: 10px;
+}
+
+.horizontal ul li:hover {
+    background-color: grey;
+    color:white;
+}

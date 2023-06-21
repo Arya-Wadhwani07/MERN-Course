@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <form method="get" style="text-align: justify;">
+        Name:<input type="text" id="n1" style="margin-left: 25px;border:3px solid red" required><p id="p1"></p><br><br>
+        Email:<input type="text" id="e1" style="margin-left: 25px;border:3px solid red"><p id="p2"></p><br><br>
+        Website:<input type="text" id="w1" style="margin-left: 12px;border:3px solid red"><p id="p3"></p><br><br>
+        Message:<textarea id="m1" style="margin-left: 7.5px;border:3px solid red"></textarea><p id="p4"></p><br><br>
+        <button id="bt1" onclick="checkParamter()" style="margin-left: 65px;">Submit</button>
+    </form>
+    <script>
+        function checkParamter(){
+            const name=document.getElementById("n1")
+            const email=document.getElementById("e1")
+            const website=document.getElementById("w1")
+            const message=document.getElementById("m1")
+
+            const p1=document.getElementById("p1")
+            const p2=document.getElementById("p2")
+            const p3=document.getElementById("p3")
+            const p4=document.getElementById("p4")
+
+            if(name.value == ''){
+                p1.innerText="This Field is required"
+                p1.style.color="red"
+                p1.style.float="right"
+                p1.style.marginRight="90px"
+                
+                
+            }
+            if(email.value == ''){
+                p2.innerText="A valid email address is required"
+                p2.style.color="red"
+                p2.style.float="right"
+                p2.style.marginRight="90px"
+                
+            }
+            if(website.value == ''){
+                p3.innerText="A valid email address is required"
+                p3.style.color="red"
+                p3.style.float="right"
+                p3.style.marginRight="90px"
+                
+            }
+            if(message.value == ''){
+                p4.innerText="A valid email address is required"
+                p4.style.color="red"
+                p4.style.float="right"
+                p4.style.marginRight="90px"
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>

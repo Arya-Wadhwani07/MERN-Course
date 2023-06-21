@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .text_characteristics{
+            color:white;
+            font-weight: normal;
+        }
+    </style>
+    
+</head>
+<body style="padding:10px">
+    <script src="js_eg9.js"></script>
+    <div style="padding:50px;background-color: #A22A57; width:657px;">
+    <form style="padding:30px; background-color: #752041; width: max-content; margin-left: 80px;">
+        <label for="n1" class="text_characteristics">Name:</label>
+        <input type="text" id="n1" placeholder="your name" style="margin-left:72px"/> <p id="p1"></p><br><br>
+        <label for="e1" class="text_characteristics">Email:</label>
+       <input type="email" id="e1" placeholder="your email" style="margin-left:75px"/> <p id="p2"></p><br><br>
+        <label for="p1" class="text_characteristics">Password:</label>
+        <input type="password" id="p1" style="margin-left:50px"/> <p id="p3"></p><br><br>
+        <label for="ph1" class="text_characteristics">Phone Number:</label>
+        <input type="phone" id="ph1" style="margin-left:17px"/> <p id="p4"></p><br><br>
+
+        <div>
+            <label style="margin-right: 10px;" for="gender" class="text_characteristics">Gender:</label>
+            <label style="margin-left: 50px;" for="m1" class="text_characteristics">Male:</label>
+            <input type="radio" id="m1" style="margin-left:5px;">
+            <label style="margin-left: 10px;" for="f1" class="text_characteristics">Female:</label>
+            <input type="radio" id="f1" style="margin-left: 5px;"/>
+            <label style="margin-left: 10px;" for="o1" class="text_characteristics">Other:</label>
+            <input type="radio" id="o1"/><br><br>
+        </div>
+    
+               <label for="lang" class="text_characteristics">Language:</label>
+               <select id="lang" style="margin-left: 46px; width: 158px">
+                   <option>Select Language</option>
+                   <option>English</option>
+                   <option>Hindi</option>
+                   <option>Marathi</option>
+               </select><br><br>
+        <label for="z1" class="text_characteristics">Zip Code:</label>
+        <input type="text" id="z1" style="margin-left:54px"/><p id="p5"></p><br><br>
+        
+        <label for="about" class="text_characteristics">About:</label>
+        <textarea id="about" style="margin-left: 72px">Write About Yourself...</textarea><p id="p6"></p><br><br><br>
+        <button style="width:300px; color:black;font-weight: bold;" onclick="check_parameters()">Register</button>
+    </form>
+    </div>
+</body>
+</html>
